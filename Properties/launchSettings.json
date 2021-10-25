@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "IPD": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

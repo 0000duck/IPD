@@ -1,0 +1,141 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:IPD.View.Pages.CoordVar"
+             xmlns:component="clr-namespace:IPD.Component"
+             xmlns:Converter="clr-namespace:IPD.Converter" x:Class="IPD.View.Pages.CoordVar.RobotPosition"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Converter:StringDoubleConverter x:Key="StringDoubleConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="posNum" Grid.Row="1" Grid.Column="0" SelectionChanged="posNum_SelectionChanged" />
+        <StackPanel Grid.Column="1" x:Name="parameter">
+            <Button x:Name="applyButton" Width="80" HorizontalAlignment="Left" Content="保存" Click="applyButton_Click" />
+            <Grid x:Name="currentPos">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="当前位置" Grid.Column="0" />
+                <TextBlock Text="1轴" Grid.Column="1" />
+                <TextBlock Text="{Binding Pos.pos[0], Converter={StaticResource StringDoubleConverter}}" Grid.Column="2" />
+                <TextBlock Text="2轴" Grid.Column="3" />
+                <TextBlock Text="{Binding Pos.pos[1], Converter={StaticResource StringDoubleConverter}}" Grid.Column="4" />
+                <TextBlock Text="3轴" Grid.Column="5" />
+                <TextBlock Text="{Binding Pos.pos[2], Converter={StaticResource StringDoubleConverter}}" Grid.Column="6" />
+                <TextBlock Text="4轴" Grid.Column="7" />
+                <TextBlock Text="{Binding Pos.pos[3], Converter={StaticResource StringDoubleConverter}}" Grid.Column="8" />
+                <TextBlock Text="5轴" Grid.Column="9" />
+                <TextBlock Text="{Binding Pos.pos[4], Converter={StaticResource StringDoubleConverter}}" Grid.Column="10" />
+                <TextBlock Text="6轴" Grid.Column="11" />
+                <TextBlock Text="{Binding Pos.pos[5], Converter={StaticResource StringDoubleConverter}}" Grid.Column="12" />
+                <TextBlock Text="7轴" Grid.Column="13" />
+                <TextBlock Text="{Binding Pos.pos[6], Converter={StaticResource StringDoubleConverter}}" Grid.Column="14" />
+            </Grid>
+            <component:ParameterListItem ParameterName="注释" ParameterComment="变量注释">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.note}" x:Name="note" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="坐标系" ParameterComment="坐标系">
+                <component:ParameterListItem.ValueContent>
+                    <ComboBox SelectedIndex="{Binding RobotPos.posValue[0]}" x:Name="coord">
+                        <ComboBoxItem Content="关节" />
+                        <ComboBoxItem Content="直角" />
+                        <ComboBoxItem Content="工具" />
+                        <ComboBoxItem Content="用户" />
+                    </ComboBox>
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="左右手" ParameterComment="SCARA的左右手" x:Name="handItem">
+                <component:ParameterListItem.ValueContent>
+                    <ComboBox SelectedIndex="{Binding RobotPos.posValue[2]}" x:Name="hand">
+                        <ComboBoxItem Content="左手" />
+                        <ComboBoxItem Content="右手" />
+                    </ComboBox>
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="形态" ParameterComment="机器人形态,0-8" x:Name="morphologyItem">
+                <component:ParameterListItem.ValueContent>
+                    <ComboBox SelectedIndex="{Binding RobotPos.posValue[2]}" x:Name="morphology">
+                        <ComboBoxItem Content="0" />
+                        <ComboBoxItem Content="1" />
+                        <ComboBoxItem Content="2" />
+                        <ComboBoxItem Content="3" />
+                        <ComboBoxItem Content="4" />
+                        <ComboBoxItem Content="5" />
+                        <ComboBoxItem Content="6" />
+                        <ComboBoxItem Content="7" />
+                        <ComboBoxItem Content="8" />
+                    </ComboBox>
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="工具手" ParameterComment="工具手序号，0-999">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.posValue[3], Converter={StaticResource StringDoubleConverter}}" x:Name="tool" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="用户坐标" ParameterComment="用户坐标序号，0-999">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.posValue[4], Converter={StaticResource StringDoubleConverter}}" x:Name="user" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="1" ParameterComment="1轴坐标值">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.posValue[7],Converter={StaticResource StringDoubleConverter}}" x:Name="j1" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="2" ParameterComment="2轴坐标值">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.posValue[8],Converter={StaticResource StringDoubleConverter}}" x:Name="j2" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="3" ParameterComment="3轴坐标值">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.posValue[9],Converter={StaticResource StringDoubleConverter}}" x:Name="j3" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="4" ParameterComment="4轴坐标值">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.posValue[10],Converter={StaticResource StringDoubleConverter}}" x:Name="j4" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="5" ParameterComment="5轴坐标值">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.posValue[11],Converter={StaticResource StringDoubleConverter}}" x:Name="j5" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="6" ParameterComment="6轴坐标值">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.posValue[12],Converter={StaticResource StringDoubleConverter}}" x:Name="j6" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="7" ParameterComment="7轴坐标值">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding RobotPos.posValue[13],Converter={StaticResource StringDoubleConverter}}" x:Name="j7" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+        </StackPanel>
+    </Grid>
+</UserControl>

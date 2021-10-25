@@ -1,0 +1,125 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:IPD.View.Pages.RobotParameter.DHParameter"
+             xmlns:component="clr-namespace:IPD.Component"
+             xmlns:model="clr-namespace:IPD.Model"
+             xmlns:Converter="clr-namespace:IPD.Converter" x:Name="userControl" x:Class="IPD.View.Pages.RobotParameter.DHParameter.Index"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+    <UserControl.Resources>
+        <Converter:StringDoubleConverter x:Key="StringDoubleConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel x:Name="parameterList">
+            <Button x:Name="saveValue" Content="保存" Grid.Row="0" Width="100" HorizontalAlignment="Left" Click="saveValue_Click" />
+            <component:ParameterListItem ParameterName="参数" ParameterComment="注释">
+                <component:ParameterListItem.ValueContent>
+                    <Label Content="数值" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="L1" ParameterComment="L1参数" x:Name="L1Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="L1Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="L2" ParameterComment="L2参数" x:Name="L2Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="L2Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="L3" ParameterComment="L3参数" x:Name="L3Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="L3Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="L4" ParameterComment="L4参数" x:Name="L4Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="L4Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="L5" ParameterComment="L5参数" x:Name="L5Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="L5Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="L6" ParameterComment="L6参数" x:Name="L6Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="L6Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="L7" ParameterComment="L7参数" x:Name="L7Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="L7Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="L8" ParameterComment="L8参数" x:Name="L8Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="L8Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="1/2耦合比" ParameterComment="1轴和2轴耦合比" x:Name="coupleCoe12Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="coupleCoe12Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="2/3耦合比" ParameterComment="2轴和3轴耦合比" x:Name="coupleCoe23Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="coupleCoe23Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="3/2耦合比" ParameterComment="2轴和4轴耦合比" x:Name="coupleCoe24Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="coupleCoe32Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="3/4耦合比" ParameterComment="3轴和4轴耦合比" x:Name="coupleCoe34Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="coupleCoe34Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="4/5耦合比" ParameterComment="4轴和5轴耦合比" x:Name="coupleCoe45Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="coupleCoe45Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="4/6耦合比" ParameterComment="4轴和6轴耦合比" x:Name="coupleCoe46Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="coupleCoe46Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="5/6耦合比" ParameterComment="5轴和6轴耦合比" x:Name="coupleCoe56Item">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="coupleCoe56Value" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="5轴方向" ParameterComment="五轴零点姿态垂直向下/水平朝前" x:Name="thetaItem">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="thetaValue" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="螺纹" ParameterComment="丝杆螺纹比" x:Name="pitchItem">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="pitchValue" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="最大动态限位" ParameterComment="动态限位的最大值" x:Name="dynamicMaxItem">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="dynamicMaxValue" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="最小动态限位" ParameterComment="动态限位的最小值" x:Name="dynamicMinItem">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="dynamicMinValue" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="安装方式" ParameterComment="安装方式，正装/倒装" x:Name="upsideDownItem">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox x:Name="upsideDownValue" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+        </StackPanel>
+    </Grid>
+</UserControl>

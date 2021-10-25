@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <connected>
+    <item>
+      <ip>192.168.1.13</ip>
+      <port>6000</port>
+    </item>
+  </connected>
+</root>

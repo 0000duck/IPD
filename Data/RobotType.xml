@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<a>
+  <e class="object">
+    <AxisSum type="number">0</AxisSum>
+    <Name type="string">无</Name>
+    <En type="string">R_NULL</En>
+    <Num type="number">0</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">6</AxisSum>
+    <Name type="string">六轴</Name>
+    <En type="string">R_GENERAL_6S</En>
+    <Num type="number">1</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">4</AxisSum>
+    <Name type="string">SCARA</Name>
+    <En type="string">R_SCARA</En>
+    <Num type="number">2</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">4</AxisSum>
+    <Name type="string">四轴码垛</Name>
+    <En type="string">R_FOURAXIS_PALLET</En>
+    <Num type="number">3</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">4</AxisSum>
+    <Name type="string">四轴关节</Name>
+    <En type="string">R_FOURAXIS</En>
+    <Num type="number">4</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">1</AxisSum>
+    <Name type="string">单轴</Name>
+    <En type="string">R_GENERAL_1S</En>
+    <Num type="number">5</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">5</AxisSum>
+    <Name type="string">五轴关节</Name>
+    <En type="string">R_GENERAL_5S</En>
+    <Num type="number">6</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">6</AxisSum>
+    <Name type="string">六轴异型-1</Name>
+    <En type="string">R_GENERAL_6S_1</En>
+    <Num type="number">7</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">2</AxisSum>
+    <Name type="string">二轴SCARA</Name>
+    <En type="string">R_SCARA_TWOAXIS</En>
+    <Num type="number">8</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">3</AxisSum>
+    <Name type="string">三轴SCARA</Name>
+    <En type="string">R_SCARA_THREEAXIS</En>
+    <Num type="number">9</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">3</AxisSum>
+    <Name type="string">三轴直角坐标</Name>
+    <En type="string">R_THREE_CARTESIAN_COORDINATE</En>
+    <Num type="number">10</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">3</AxisSum>
+    <Name type="string">三轴直角坐标异型</Name>
+    <En type="string">R_THREE_CARTESIAN_COORDINATE_1</En>
+    <Num type="number">11</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">7</AxisSum>
+    <Name type="string">七轴</Name>
+    <En type="string">R_GENERAL_7S_RBT</En>
+    <Num type="number">12</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">4</AxisSum>
+    <Name type="string">SCARA异型</Name>
+    <En type="string">R_SCARA_1</En>
+    <Num type="number">13</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">4</AxisSum>
+    <Name type="string">四轴码垛异型</Name>
+    <En type="string">R_FOURAXIS_PALLET_1</En>
+    <Num type="number">14</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">6</AxisSum>
+    <Name type="string">六轴喷涂</Name>
+    <En type="string">R_SIXAXIS_SPRAY_BBR</En>
+    <Num type="number">15</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">4</AxisSum>
+    <Name type="string">四轴直角坐标</Name>
+    <En type="string">R_FOUR_CARTESIAN_COORDINATE</En>
+    <Num type="number">16</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">4</AxisSum>
+    <Name type="string">四轴极坐标</Name>
+    <En type="string">R_FOUR_POLAR_COORDINATE_1</En>
+    <Num type="number">17</Num>
+  </e>
+  <e class="object">
+    <AxisSum type="number">6</AxisSum>
+    <Name type="string">六轴异型-2</Name>
+    <En type="string">R_GENERAL_6S_2</En>
+    <Num type="number">18</Num>
+  </e>
+</a>

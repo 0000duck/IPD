@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="IPD.View.Pages.CoordVar.ToolCoord"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:component="clr-namespace:IPD.Component"
+             xmlns:local="clr-namespace:IPD.View.Pages.CoordVar"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" x:Name="switchTool" Click="switchTool_Click">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="切换" Grid.Column="0" />
+                    <TextBlock Text=" 当前:" Grid.Column="1" />
+                    <TextBlock Text="{Binding CurToolNum.curToolNum}" Grid.Column="2" />
+                </Grid>
+            </Button>
+            <ListBox x:Name="toolNum" Grid.Row="1" SelectionChanged="toolNum_SelectionChanged" />
+        </Grid>
+        <StackPanel Grid.Column="1" x:Name="parameter">
+            <Button x:Name="applyButton" Width="80" HorizontalAlignment="Left" Content="保存" Click="applyButton_Click" />
+            <component:ParameterListItem ParameterName="注释" ParameterComment="工具注释">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding Tool.tool.note,Mode=TwoWay}" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="X" ParameterComment="X方向偏移">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding Tool.tool.x,Mode=TwoWay}" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="Y" ParameterComment="Y方向偏移">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding Tool.tool.y,Mode=TwoWay}" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="Z" ParameterComment="Z方向偏移">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding Tool.tool.z,Mode=TwoWay}" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="A" ParameterComment="绕X轴旋转弧度">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding Tool.tool.A,Mode=TwoWay}" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="B" ParameterComment="绕Y轴旋转弧度">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding Tool.tool.B,Mode=TwoWay}" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="C" ParameterComment="绕Z轴旋转弧度">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding Tool.tool.C,Mode=TwoWay}" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+            <component:ParameterListItem ParameterName="U" ParameterComment="垂直旋转弧度">
+                <component:ParameterListItem.ValueContent>
+                    <TextBox Text="{Binding Tool.tool.C,Mode=TwoWay}" />
+                </component:ParameterListItem.ValueContent>
+            </component:ParameterListItem>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,606 @@
+﻿<UserControl x:Class="IPD.View.Pages.RobotParameter.SlaveConfig.Index"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:IPD.View.Pages.RobotParameter.SlaveConfig"
+             xmlns:component="clr-namespace:IPD.Component"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800" Background="White" Unloaded="UserControl_Unloaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Width="80" HorizontalAlignment="Left" x:Name="applySlaveConfig" Click="applySlaveConfig_Click">应用</Button>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden" Grid.Column="0" Grid.Row="1">
+            <StackPanel x:Name="rootPanel">
+                <component:ParameterListItem ParameterName="机器人总数" ParameterComment="机器人的总个数">
+                    <component:ParameterListItem.ValueContent>
+                        <ComboBox x:Name="robotSumSelector" SelectedIndex="{Binding RobotSum,Mode=OneWay}" SelectionChanged="robotSumSelector_SelectionChanged">
+                            <ComboBoxItem Content="0" IsEnabled="False" />
+                            <ComboBoxItem Content="1" />
+                            <ComboBoxItem Content="2" />
+                            <ComboBoxItem Content="3" />
+                            <ComboBoxItem Content="4" />
+                        </ComboBox>
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <StackPanel x:Name="robot1Panel"  Visibility="Collapsed">
+                    <component:ParameterListItem ParameterName="机器人1类型" ParameterComment="机器人1的类型">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot1Selector" SelectionChanged="robot1Selector_SelectionChanged">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人1轴1伺服" ParameterComment="机器人1轴1的伺服类型" x:Name="robot1Axis1Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot1Axis1Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人1轴2伺服" ParameterComment="机器人1轴2的伺服类型" x:Name="robot1Axis2Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot1Axis2Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人1轴3伺服" ParameterComment="机器人1轴3的伺服类型" x:Name="robot1Axis3Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot1Axis3Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人1轴4伺服" ParameterComment="机器人1轴4的伺服类型" x:Name="robot1Axis4Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot1Axis4Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人1轴5伺服" ParameterComment="机器人1轴5的伺服类型" x:Name="robot1Axis5Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot1Axis5Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人1轴6伺服" ParameterComment="机器人1轴6的伺服类型" x:Name="robot1Axis6Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot1Axis6Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人1轴7伺服" ParameterComment="机器人1轴7的伺服类型" x:Name="robot1Axis7Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot1Axis7Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人1附加轴组数" ParameterComment="机器人1附加轴的组数，最多3组" x:Name="robot1SyncGroupSumItem">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot1SyncGroupSumSelector" SelectionChanged="robot1SyncGroupSumSelector_SelectionChanged">
+                                <ComboBoxItem Content="0" />
+                                <ComboBoxItem Content="1" />
+                                <ComboBoxItem Content="2" />
+                                <ComboBoxItem Content="3" />
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <StackPanel x:Name="robot1SyncGroup1Panel"  Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人1组1附加轴类型" ParameterComment="机器人1第1组附加轴的类型" x:Name="robot1SyncGroup1Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot1SyncGroup1Selector" SelectionChanged="robot1SyncGroup1Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人1组1附加轴1" ParameterComment="机器人1第1组附加轴1的轴映射" x:Name="robot1SyncGroup1Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot1SyncGroup1Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人1组1附加轴2" ParameterComment="机器人1第1组附加轴2的轴映射" x:Name="robot1SyncGroup1Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot1SyncGroup1Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                    <StackPanel x:Name="robot1SyncGroup2Panel"  Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人1组2附加轴类型" ParameterComment="机器人1第2组附加轴的类型" x:Name="robot1SyncGroup2Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot1SyncGroup2Selector" SelectionChanged="robot1SyncGroup2Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人1组2附加轴1" ParameterComment="机器人1第2组附加轴1的轴映射" x:Name="robot1SyncGroup2Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot1SyncGroup2Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人1组2附加轴2" ParameterComment="机器人1第2组附加轴2的轴映射" x:Name="robot1SyncGroup2Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot1SyncGroup2Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                    <StackPanel x:Name="robot1SyncGroup3Panel" Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人1组3附加轴类型" ParameterComment="机器人1第3组附加轴的类型" x:Name="robot1SyncGroup3Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot1SyncGroup3Selector" SelectionChanged="robot1SyncGroup3Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人1组3附加轴1" ParameterComment="机器人1第2组附加轴3的轴映射" x:Name="robot1SyncGroup3Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot1SyncGroup3Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人1组3附加轴2" ParameterComment="机器人1第3组附加轴2的轴映射" x:Name="robot1SyncGroup3Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot1SyncGroup3Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel x:Name="robot2Panel"  Visibility="Collapsed">
+                    <component:ParameterListItem ParameterName="机器人2类型" ParameterComment="机器人2的类型">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot2Selector" SelectionChanged="robot2Selector_SelectionChanged">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人2轴1伺服" ParameterComment="机器人2轴1的伺服类型" x:Name="robot2Axis1Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot2Axis1Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人2轴2伺服" ParameterComment="机器人2轴2的伺服类型" x:Name="robot2Axis2Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot2Axis2Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人2轴3伺服" ParameterComment="机器人2轴3的伺服类型" x:Name="robot2Axis3Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot2Axis3Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人2轴4伺服" ParameterComment="机器人2轴4的伺服类型" x:Name="robot2Axis4Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot2Axis4Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人2轴5伺服" ParameterComment="机器人2轴5的伺服类型" x:Name="robot2Axis5Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot2Axis5Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人2轴6伺服" ParameterComment="机器人2轴6的伺服类型" x:Name="robot2Axis6Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot2Axis6Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人2轴7伺服" ParameterComment="机器人2轴7的伺服类型" x:Name="robot2Axis7Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot2Axis7Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人2附加轴组数" ParameterComment="机器人2附加轴的组数，最多3组" x:Name="robot2SyncGroupSumItem">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot2SyncGroupSumSelector" SelectionChanged="robot2SyncGroupSumSelector_SelectionChanged">
+                                <ComboBoxItem Content="0" />
+                                <ComboBoxItem Content="1" />
+                                <ComboBoxItem Content="2" />
+                                <ComboBoxItem Content="3" />
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <StackPanel x:Name="robot2SyncGroup1Panel"  Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人2组1附加轴类型" ParameterComment="机器人2第1组附加轴的类型" x:Name="robot2SyncGroup1Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot2SyncGroup1Selector" SelectionChanged="robot2SyncGroup1Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人2组1附加轴1" ParameterComment="机器人2第1组附加轴1的轴映射" x:Name="robot2SyncGroup1Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot2SyncGroup1Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人2组1附加轴2" ParameterComment="机器人2第1组附加轴2的轴映射" x:Name="robot2SyncGroup1Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot2SyncGroup1Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                    <StackPanel x:Name="robot2SyncGroup2Panel"  Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人2组2附加轴类型" ParameterComment="机器人2第2组附加轴的类型" x:Name="robot2SyncGroup2Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot2SyncGroup2Selector" SelectionChanged="robot2SyncGroup2Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人2组2附加轴1" ParameterComment="机器人2第2组附加轴1的轴映射" x:Name="robot2SyncGroup2Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot2SyncGroup2Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人2组2附加轴2" ParameterComment="机器人2第2组附加轴2的轴映射" x:Name="robot2SyncGroup2Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot2SyncGroup2Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                    <StackPanel x:Name="robot2SyncGroup3Panel" Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人2组3附加轴类型" ParameterComment="机器人2第3组附加轴的类型" x:Name="robot2SyncGroup3Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot2SyncGroup3Selector" SelectionChanged="robot2SyncGroup3Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人2组3附加轴1" ParameterComment="机器人2第2组附加轴3的轴映射" x:Name="robot2SyncGroup3Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot2SyncGroup3Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人2组3附加轴2" ParameterComment="机器人2第3组附加轴2的轴映射" x:Name="robot2SyncGroup3Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot2SyncGroup3Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel x:Name="robot3Panel"  Visibility="Collapsed">
+                    <component:ParameterListItem ParameterName="机器人3类型" ParameterComment="机器人3的类型">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot3Selector" SelectionChanged="robot3Selector_SelectionChanged">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人3轴1伺服" ParameterComment="机器人3轴1的伺服类型" x:Name="robot3Axis1Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot3Axis1Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人3轴2伺服" ParameterComment="机器人3轴2的伺服类型" x:Name="robot3Axis2Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot3Axis2Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人3轴3伺服" ParameterComment="机器人3轴3的伺服类型" x:Name="robot3Axis3Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot3Axis3Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人3轴4伺服" ParameterComment="机器人3轴4的伺服类型" x:Name="robot3Axis4Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot3Axis4Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人3轴5伺服" ParameterComment="机器人3轴5的伺服类型" x:Name="robot3Axis5Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot3Axis5Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人3轴6伺服" ParameterComment="机器人3轴6的伺服类型" x:Name="robot3Axis6Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot3Axis6Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人3轴7伺服" ParameterComment="机器人3轴7的伺服类型" x:Name="robot3Axis7Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot3Axis7Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人3附加轴组数" ParameterComment="机器人3附加轴的组数，最多3组" x:Name="robot3SyncGroupSumItem">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot3SyncGroupSumSelector" SelectionChanged="robot3SyncGroupSumSelector_SelectionChanged">
+                                <ComboBoxItem Content="0" />
+                                <ComboBoxItem Content="1" />
+                                <ComboBoxItem Content="2" />
+                                <ComboBoxItem Content="3" />
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <StackPanel x:Name="robot3SyncGroup1Panel" Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人3组1附加轴类型" ParameterComment="机器人3第1组附加轴的类型" x:Name="robot3SyncGroup1Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot3SyncGroup1Selector" SelectionChanged="robot3SyncGroup1Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人3组1附加轴1" ParameterComment="机器人3第1组附加轴1的轴映射" x:Name="robot3SyncGroup1Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot3SyncGroup1Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人3组1附加轴2" ParameterComment="机器人3第1组附加轴2的轴映射" x:Name="robot3SyncGroup1Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot3SyncGroup1Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                    <StackPanel x:Name="robot3SyncGroup2Panel" Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人3组2附加轴类型" ParameterComment="机器人3第2组附加轴的类型" x:Name="robot3SyncGroup2Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot3SyncGroup2Selector" SelectionChanged="robot3SyncGroup2Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人3组2附加轴1" ParameterComment="机器人3第2组附加轴1的轴映射" x:Name="robot3SyncGroup2Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot3SyncGroup2Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人3组2附加轴2" ParameterComment="机器人3第2组附加轴2的轴映射" x:Name="robot3SyncGroup2Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot3SyncGroup2Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                    <StackPanel x:Name="robot3SyncGroup3Panel" Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人3组3附加轴类型" ParameterComment="机器人3第3组附加轴的类型" x:Name="robot3SyncGroup3Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot3SyncGroup3Selector" SelectionChanged="robot3SyncGroup3Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人3组3附加轴1" ParameterComment="机器人3第2组附加轴3的轴映射" x:Name="robot3SyncGroup3Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot3SyncGroup3Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人3组3附加轴2" ParameterComment="机器人3第3组附加轴2的轴映射" x:Name="robot3SyncGroup3Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot3SyncGroup3Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel x:Name="robot4Panel" Visibility="Collapsed">
+                    <component:ParameterListItem ParameterName="机器人4类型" ParameterComment="机器人4的类型">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot4Selector" SelectionChanged="robot4Selector_SelectionChanged">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人4轴1伺服" ParameterComment="机器人4轴1的伺服类型" x:Name="robot4Axis1Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot4Axis1Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人4轴2伺服" ParameterComment="机器人4轴2的伺服类型" x:Name="robot4Axis2Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot4Axis2Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人4轴3伺服" ParameterComment="机器人4轴3的伺服类型" x:Name="robot4Axis3Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot4Axis3Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人4轴4伺服" ParameterComment="机器人4轴4的伺服类型" x:Name="robot4Axis4Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot4Axis4Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人4轴5伺服" ParameterComment="机器人4轴5的伺服类型" x:Name="robot4Axis5Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot4Axis5Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人4轴6伺服" ParameterComment="机器人4轴6的伺服类型" x:Name="robot4Axis6Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot4Axis6Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人4轴7伺服" ParameterComment="机器人4轴7的伺服类型" x:Name="robot4Axis7Item" Visibility="Collapsed">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot4Axis7Selector">
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <component:ParameterListItem ParameterName="机器人4附加轴组数" ParameterComment="机器人4附加轴的组数，最多3组" x:Name="robot4SyncGroupSumItem">
+                        <component:ParameterListItem.ValueContent>
+                            <ComboBox x:Name="robot4SyncGroupSumSelector" SelectionChanged="robot4SyncGroupSumSelector_SelectionChanged">
+                                <ComboBoxItem Content="0" />
+                                <ComboBoxItem Content="1" />
+                                <ComboBoxItem Content="2" />
+                                <ComboBoxItem Content="3" />
+                            </ComboBox>
+                        </component:ParameterListItem.ValueContent>
+                    </component:ParameterListItem>
+                    <StackPanel x:Name="robot4SyncGroup1Panel" Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人4组1附加轴类型" ParameterComment="机器人4第1组附加轴的类型" x:Name="robot4SyncGroup1Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot4SyncGroup1Selector" SelectionChanged="robot4SyncGroup1Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人4组1附加轴1" ParameterComment="机器人4第1组附加轴1的轴映射" x:Name="robot4SyncGroup1Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot4SyncGroup1Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人4组1附加轴2" ParameterComment="机器人4第1组附加轴2的轴映射" x:Name="robot4SyncGroup1Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot4SyncGroup1Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                    <StackPanel x:Name="robot4SyncGroup2Panel" Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人4组2附加轴类型" ParameterComment="机器人4第2组附加轴的类型" x:Name="robot4SyncGroup2Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot4SyncGroup2Selector" SelectionChanged="robot4SyncGroup2Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人4组2附加轴1" ParameterComment="机器人4第2组附加轴1的轴映射" x:Name="robot4SyncGroup2Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot4SyncGroup2Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人4组2附加轴2" ParameterComment="机器人4第2组附加轴2的轴映射" x:Name="robot4SyncGroup2Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot4SyncGroup2Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                    <StackPanel x:Name="robot4SyncGroup3Panel" Visibility="Collapsed">
+                        <component:ParameterListItem ParameterName="机器人4组3附加轴类型" ParameterComment="机器人4第3组附加轴的类型" x:Name="robot4SyncGroup3Item">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot4SyncGroup3Selector" SelectionChanged="robot4SyncGroup3Selector_SelectionChanged">
+                                    <ComboBoxItem Content="未选择" IsEnabled="False" />
+                                    <ComboBoxItem Content="单轴旋转台" />
+                                    <ComboBoxItem Content="双轴变位机" />
+                                    <ComboBoxItem Content="地轨" />
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人4组3附加轴1" ParameterComment="机器人4第2组附加轴3的轴映射" x:Name="robot4SyncGroup3Axis1Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot4SyncGroup3Axis1Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                        <component:ParameterListItem ParameterName="机器人4组3附加轴2" ParameterComment="机器人4第3组附加轴2的轴映射" x:Name="robot4SyncGroup3Axis2Item" Visibility="Collapsed">
+                            <component:ParameterListItem.ValueContent>
+                                <ComboBox x:Name="robot4SyncGroup3Axis2Selector">
+                                </ComboBox>
+                            </component:ParameterListItem.ValueContent>
+                        </component:ParameterListItem>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="25" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25" />
+                        <RowDefinition Height="25" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="周期" Grid.Column="0" />
+                        <ComboBox x:Name="eniSelector" SelectedIndex="{Binding ControlCycleSelectedIndex,Mode=TwoWay}" Grid.Column="1">
+                            <ComboBoxItem Content="1" />
+                            <ComboBoxItem Content="2" />
+                            <ComboBoxItem Content="4" />
+                            <ComboBoxItem Content="8" />
+                        </ComboBox>
+                    </Grid>
+                    <Button x:Name="applyCycle" Content="应用" Click="applyCycle_Click" Grid.Row="1" Width="80" />
+                </Grid>
+                <TextBlock Text="{Binding EniName.ENIName}" Grid.Row="1" />
+                <TextBlock Text="{Binding EniName.isHaveENI}" Grid.Row="2" />
+            </Grid>
+            <Grid Grid.Row="1">
+                <DataGrid ItemsSource="{Binding SlaveTypeList.slaveType}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding}" Header="从站" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

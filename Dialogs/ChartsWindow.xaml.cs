@@ -5,13 +5,14 @@ using System.Windows;
 using System.Windows.Controls;
 using IPD.Model;
 using IPD.Tcp;
+using MahApps.Metro.Controls;
 
 namespace IPD.Dialogs
 {
     /// <summary>
     /// ChartsWindowxaml.xaml 的交互逻辑
     /// </summary>
-    public partial class ChartsWindow : Window
+    public partial class ChartsWindow : MetroWindow
     {
         private Charts charts = Charts.GetInstance;
         private Client7000 client = Client7000.GetInstance();

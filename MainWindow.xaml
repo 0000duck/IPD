@@ -45,7 +45,7 @@
                                   Width="400"
                                   Background="Red"
                           HorizontalAlignment="Left" OpacityMask="White" BorderBrush="#FFB66868">
-                <Button Content="{Binding LogParameter.data}" x:Name="logButton" Background="{Binding LogParameter.kind, Converter={StaticResource MessageColorConverter}}" Height="25" FontSize="18" Click="logButton_Click" />
+                <Button Content="{Binding LogParameter.data}" x:Name="logButton" Background="{Binding LogParameter.kind, Converter={StaticResource MessageColorConverter}}" Height="25" Click="logButton_Click" />
             </fluent:StatusBarItem>
         </fluent:StatusBar>
     </Grid>

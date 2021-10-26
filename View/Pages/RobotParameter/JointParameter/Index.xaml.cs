@@ -36,7 +36,7 @@ namespace IPD.View.Pages.RobotParameter.JointParameter
                 TabItem item = new TabItem();
                 item.Header = "轴" + (i + 1).ToString();
                 item.Width = 60;
-                item.Height = 25;
+                //item.Height = 25;
                 JointParameterItem jointParameterItem = new JointParameterItem();
                 Binding posSWLimitBinding = new Binding();
                 Binding reducRatioBinding = new Binding();

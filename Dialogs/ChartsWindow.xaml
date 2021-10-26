@@ -1,4 +1,4 @@
-﻿<Window
+﻿<mah:MetroWindow
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:IPD.Dialogs"
         xmlns:charts="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
         xmlns:Converter="clr-namespace:IPD.Converter" x:Class="IPD.Dialogs.ChartsWindow"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
         Title="示波器" Height="800" Width="1280" Unloaded="Window_Unloaded">
     <Window.Resources>
@@ -71,4 +72,4 @@
         </Grid>
         <charts:CartesianChart Series="{Binding Series}" ZoomMode="Both" Grid.Column="1" />
     </Grid>
-</Window>
+</mah:MetroWindow >

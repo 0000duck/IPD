@@ -14,7 +14,7 @@ namespace IPD.Util
         public static RobotTypes GetRobot(int num)
         {
             XmlDocument xml = new XmlDocument();
-            xml.LoadXml(Resource.RobotType);
+            xml.LoadXml(IPDResource.Resource.RobotType);
             XmlNode rootNode = xml.SelectSingleNode("a");
             XmlNodeList rootChildList = rootNode.ChildNodes;
             RobotTypes robotTypes = new RobotTypes();
@@ -37,7 +37,7 @@ namespace IPD.Util
         public static RobotTypes GetRobot(string En)
         {
             XmlDocument xml = new XmlDocument();
-            xml.LoadXml(Resource.RobotType);
+            xml.LoadXml(IPDResource.Resource.RobotType);
             XmlNode rootNode = xml.SelectSingleNode("a");
             XmlNodeList rootChildList = rootNode.ChildNodes;
             RobotTypes robotTypes = new RobotTypes();
@@ -60,7 +60,7 @@ namespace IPD.Util
         public static List<RobotTypes> getRobotTypeList()
         {
             List<RobotTypes> robotTypeList = new List<RobotTypes>();
-            XDocument doc = XDocument.Parse(Resource.RobotType);
+            XDocument doc = XDocument.Parse(IPDResource.Resource.RobotType);
             XElement root = doc.Element("a");
             root.Elements().ToList().ForEach(v =>
             {

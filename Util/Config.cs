@@ -45,7 +45,7 @@ namespace IPD.Util
             else
 
             {
-                string initConfigString = Resource.initConfig;
+                string initConfigString = IPDResource.Resource.initConfig;
                 FileStream newConfigFile = File.Create(configPath);
                 newConfigFile.Write(System.Text.Encoding.UTF8.GetBytes(initConfigString));
                 newConfigFile.Close();

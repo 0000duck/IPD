@@ -46,10 +46,6 @@ namespace IPD.View.RibbonBar
             aboutDialog.ShowDialog();
         }
 
-        private void update_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
         private void switchRobot(int robot)
         {
             client.SendMessage(0x5001, "{\"mode\":0,\"robot\":" + robot.ToString() + "}");
@@ -74,6 +70,12 @@ namespace IPD.View.RibbonBar
         private void GlobalPosition_Click(object sender, RoutedEventArgs e)
         {
             ChangeContentEvent.Invoke(new Pages.CoordVar.RobotPosition());
+        }
+
+        private void opcua_Click(object sender, RoutedEventArgs e)
+        {
+            OpcUaWindow opcUaWindow = new OpcUaWindow();
+            opcUaWindow.Show();
         }
     }
 }

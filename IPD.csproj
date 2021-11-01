@@ -21,18 +21,11 @@
     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="NrcTcpLibrary" Version="1.0.1" />
+    <PackageReference Include="OPCFoundation.NetStandard.Opc.Ua.Client" Version="1.4.367.42" />
     <PackageReference Include="XmlLogLibrary" Version="1.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resource\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="logo.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
     <None Include="Resource\icon\app.ico">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
@@ -49,8 +42,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Resource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>IPDResource</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>
 

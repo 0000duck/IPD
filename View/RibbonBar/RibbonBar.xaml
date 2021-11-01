@@ -28,10 +28,10 @@
                     </Fluent:Gallery>
                 </Fluent:DropDownButton>
             </Fluent:RibbonGroupBox>
-            <Fluent:RibbonGroupBox Header="版本升级"  IsEnabled="{Binding ConnectState}">
-                <Fluent:Button x:Name="update" Header="系统升级" Click="update_Click" />
+            <Fluent:RibbonGroupBox Header="版本升级" IsEnabled="False">
+                <Fluent:Button x:Name="update" Header="系统升级" />
             </Fluent:RibbonGroupBox>
-            <Fluent:RibbonGroupBox Header="导入导出" IsEnabled="{Binding ConnectState}">
+            <Fluent:RibbonGroupBox Header="导入导出" IsEnabled="False">
                 <Fluent:Button x:Name="importProgram" Header="导入程序" />
                 <Fluent:Button x:Name="exportProgram" Header="导出程序" />
                 <Fluent:Button x:Name="importParameter" Header="导入参数" />
@@ -45,11 +45,12 @@
         </Fluent:RibbonTabItem>
         <Fluent:RibbonTabItem Header="调试"  IsEnabled="{Binding ConnectState}">
             <Fluent:RibbonGroupBox Header="点动">
-                <Fluent:Button x:Name="jog" Header="点动" />
+                <Fluent:Button x:Name="jog" Header="点动" IsEnabled="False" />
             </Fluent:RibbonGroupBox>
             <Fluent:RibbonGroupBox Header="其它">
                 <Fluent:Button x:Name="oscilloscope" Header="示波器" Click="oscilloscope_Click" />
-                <Fluent:Button x:Name="codeEditor" Header="代码编辑" />
+                <Fluent:Button x:Name="codeEditor" Header="代码编辑" IsEnabled="False" />
+                <Fluent:Button x:Name="opcua" Header="OPC-UA" Click="opcua_Click" />
             </Fluent:RibbonGroupBox>
         </Fluent:RibbonTabItem>
         <Fluent:RibbonTabItem Header="坐标系和变量"  IsEnabled="{Binding ConnectState}">

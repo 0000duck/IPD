@@ -157,7 +157,7 @@ namespace IPD.Model
             RobotTypeObject rt = JsonConvert.DeserializeObject<RobotTypeObject>(data);
             int typeNum = rt.type;
             XmlDocument xml = new XmlDocument();
-            xml.LoadXml(Resource.RobotType);
+            xml.LoadXml(IPDResource.Resource.RobotType);
             XmlNode rootNode = xml.SelectSingleNode("a");
             XmlNodeList rootChildList = rootNode.ChildNodes;
             RobotTypes robotTypes = new RobotTypes();

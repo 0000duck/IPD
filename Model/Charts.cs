@@ -1,16 +1,16 @@
-﻿using System.Collections.Generic;
-using IPD.Common;
-using Newtonsoft.Json;
-using SkiaSharp;
+﻿using IPD.Common;
 using LiveChartsCore;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.SkiaSharpView.Painting;
+using Newtonsoft.Json;
+using SkiaSharp;
+using System.Collections.Generic;
 
 namespace IPD.Model
 {
     public class Charts : ModuleBase
     {
-        private readonly static object lockObj = new object();
+        private static readonly object lockObj = new object();
         private static Charts instance = null;
         private List<ReplyData> replyList = new List<ReplyData>();
 

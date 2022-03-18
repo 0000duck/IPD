@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Resource\icon\app.ico</ApplicationIcon>
     <StartupObject>IPD.App</StartupObject>
@@ -57,5 +57,10 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="View\Pages\OtherParameter\ServoParameter\FNParameter\" />
+    <Folder Include="View\Pages\OtherParameter\ServoParameter\BNParameter\" />
   </ItemGroup>
 </Project>

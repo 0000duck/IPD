@@ -238,7 +238,7 @@ namespace IPD.Model
 
     public class RobotParameter : ModuleBase
     {
-        private readonly static object lockObj = new object();
+        private static readonly object lockObj = new object();
 
         private static RobotParameter instance = null;
 
@@ -349,6 +349,7 @@ namespace IPD.Model
         public void JointParameterChange(string data)
         {
             JointRoot v = JsonConvert.DeserializeObject<JointRoot>(data);
+
             if (JointList == null)
             {
                 List<JointRoot> list = new List<JointRoot> { v };

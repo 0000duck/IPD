@@ -1,0 +1,1935 @@
+{
+   "servo" : {
+      "PA0_参数密码" : {
+         "hex" : false,
+         "index" : 0,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 9999
+      },
+	   "PA1*_电机型号" : {
+         "hex" : false,
+         "index" : 1,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 613
+      },
+      "PA2*_驱动器型号" : {
+         "hex" : false,
+         "index" : 2,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 6
+     },
+      "PA3*_初始显示状态" : {
+         "hex" : false,
+         "index" : 3,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 35
+      },
+      "PA4*_驱动器型号" : {
+         "hex" : false,
+         "index" : 4,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 6
+      },
+		"PA5_速度比例增益" : {
+         "hex" : false,
+         "index" : 5,
+         "isUnsigned" : false,
+         "lowLimit" : 2,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 2000
+      },
+		"PA6_速度积分时间常数" : {
+         "hex" : false,
+         "index" : 6,
+         "isUnsigned" : false,
+         "lowLimit" : 10,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 9999
+      },
+		"PA7_转矩滤波器时间常数" : {
+         "hex" : false,
+         "index" : 7,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.01ms",
+         "upLimit" : 1999
+      },
+		"PA8_速度反馈滤波时间常数" : {
+         "hex" : false,
+         "index" : 8,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.01ms",
+         "upLimit" : 999
+      },
+		"PA9_位置比例增益" : {
+         "hex" : false,
+         "index" : 9,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 1000
+      },
+	   "PA10_速度前馈增益" : {
+         "hex" : false,
+         "index" : 10,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 200
+      },
+      "PA11_速度前馈滤波时间常数" : {
+         "hex" : false,
+         "index" : 11,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 99
+      },
+		"PA12*_位置指令脉冲分频分子" : {
+         "hex" : false,
+         "index" : 12,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 32767
+      },
+		"PA13*_位置指令脉冲分频分母" : {
+         "hex" : false,
+         "index" : 13,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 32767
+      },
+		"PA14*_位置指令脉冲输入方式" : {
+         "hex" : false,
+         "index" : 14,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 4
+      },
+		"PA15_指令方向取反设置" : {
+         "hex" : false,
+         "index" : 15,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA16_定位完成范围" : {
+         "hex" : false,
+         "index" : 16,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "脉冲",
+         "upLimit" : 30000
+      },
+		"PA17_位置超差检测范围" : {
+         "hex" : false,
+         "index" : 17,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1圈",
+         "upLimit" : 3000
+      },
+		"PA18_绝对式编码器使用方式" : {
+         "hex" : false,
+         "index" : 18,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA19*_位置指令脉冲信号滤波时间常数" : {
+         "hex" : false,
+         "index" : 19,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1us",
+         "upLimit" : 199
+      },
+		"PA20*_伺服控制位功能" : {
+         "hex" : false,
+         "index" : 20,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA21_JOG运行速度/内部速度激励信号幅值" : {
+         "hex" : false,
+         "index" : 21,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 3000
+      },
+		"PA22*_速度指令选择" : {
+         "hex" : false,
+         "index" : 22,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 2
+      },
+		"PA23*_用户最高速度限制百分比" : {
+         "hex" : false,
+         "index" : 23,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 200
+      },
+		"PA24*_位置指令方向信号滤波时间常数" : {
+         "hex" : false,
+         "index" : 24,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1us",
+         "upLimit" : 1024
+      },
+		"PA25_转矩指令来源" : {
+         "hex" : false,
+         "index" : 25,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 8
+      },
+		"PA26_内部激励信号频率" : {
+         "hex" : false,
+         "index" : 26,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "Hz",
+         "upLimit" : 500
+      },
+		"PA27_内部速度指令1" : {
+         "hex" : false,
+         "index" : 27,
+         "isUnsigned" : true,
+         "lowLimit" : -9000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 9000
+      },
+		"PA28_到达速度" : {
+         "hex" : false,
+         "index" : 28,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 3000
+      },
+		"PA29_负载转动惯量比" : {
+         "hex" : false,
+         "index" : 29,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 8000
+      },
+		"PA30*_电机转矩过载报警值" : {
+         "hex" : false,
+         "index" : 30,
+         "isUnsigned" : false,
+         "lowLimit" : 10,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 300
+      },
+		"PA31*_电机转矩过载报警检测时间" : {
+         "hex" : false,
+         "index" : 31,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 12000
+      },
+		"PA32_控制方式切换允许" : {
+         "hex" : false,
+         "index" : 32,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 1
+      },
+		"PA33_刚性等级" : {
+         "hex" : false,
+         "index" : 33,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"PA34_内部CCW转矩限制" : {
+         "hex" : false,
+         "index" : 34,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 300
+      },
+		"PA35_内部CW转矩限制" : {
+         "hex" : false,
+         "index" : 35,
+         "isUnsigned" : true,
+         "lowLimit" : -300,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 0
+      },
+		"PA36_速度指令滤波时间常数" : {
+         "hex" : false,
+         "index" : 36,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 99
+      },
+		"PA37_转矩前馈滤波时间常数" : {
+         "hex" : false,
+         "index" : 37,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 99
+      },
+		"PA38_DP菜单动态显示项" : {
+         "hex" : false,
+         "index" : 38,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 300
+      },
+		"PA39_STP串口通信速率" : {
+         "hex" : false,
+         "index" : 39,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"PA40_加速时间常数" : {
+         "hex" : false,
+         "index" : 40,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 10000
+      },
+		"PA41_减速时间常数" : {
+         "hex" : false,
+         "index" : 41,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 10000
+      },
+		"PA42_增量式编码器AB信号滤波时间" : {
+         "hex" : false,
+         "index" : 42,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "*20ns",
+         "upLimit" : 1000
+      },
+		"PA43_制动电阻最大允许冲击时间" : {
+         "hex" : false,
+         "index" : 43,
+         "isUnsigned" : false,
+         "lowLimit" : 10,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 5000
+      },
+		"PA44*_脉冲指令功能选择" : {
+         "hex" : false,
+         "index" : 44,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA45*_绝对式编码器单圈位数" : {
+         "hex" : false,
+         "index" : 45,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 30
+      },
+		"PA46_速度积分滤波器时间常数" : {
+         "hex" : false,
+         "index" : 46,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 500
+      },
+		"PA47*_电机静止时使能断开等待时间" : {
+         "hex" : false,
+         "index" : 47,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 5000
+      },
+		"PA48*_电机运转时电磁制动器制动等待时间" : {
+         "hex" : false,
+         "index" : 48,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 5000
+      },
+		"PA49*_电机运转时制动器动作速度" : {
+         "hex" : false,
+         "index" : 49,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 3000
+      },
+		"PA50_电机使能时制动器打开延时" : {
+         "hex" : false,
+         "index" : 50,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 3000
+      },
+		"PA51*_制动电阻选择开关" : {
+         "hex" : false,
+         "index" : 51,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 3
+      },
+		"PA52_位置指令平滑时间常数" : {
+         "hex" : false,
+         "index" : 52,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 999
+      },
+		"PA53_低5位输入端子强制ON" : {
+         "hex" : false,
+         "index" : 53,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA54_高5位输入端子强制ON" : {
+         "hex" : false,
+         "index" : 54,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA55_低5位输入端子逻辑取反" : {
+         "hex" : false,
+         "index" : 55,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA56_高5位输入端子逻辑取反" : {
+         "hex" : false,
+         "index" : 56,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA57_输出端子逻辑取反" : {
+         "hex" : false,
+         "index" : 57,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA58_输入端子去抖时间常数" : {
+         "hex" : false,
+         "index" : 58,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 8000
+      },
+		"PA59_报警屏蔽设置位2" : {
+         "hex" : false,
+         "index" : 59,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA60_转矩指令滤波时间常数" : {
+         "hex" : false,
+         "index" : 60,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.01ms",
+         "upLimit" : 4999
+      },
+		"PA61*_电机编码器类型设置" : {
+         "hex" : false,
+         "index" : 61,
+         "isUnsigned" : true,
+         "lowLimit" : -1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 7
+      },
+		"PA62_报警屏蔽设置位" : {
+         "hex" : false,
+         "index" : 62,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA63_扰动转矩补偿增益滤波器截止" : {
+         "hex" : false,
+         "index" : 63,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "Hz",
+         "upLimit" : 2000
+      },
+		"PA64_电流比例增益" : {
+         "hex" : false,
+         "index" : 64,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 5000
+      },
+		"PA65_电流积分时间常数" : {
+         "hex" : false,
+         "index" : 65,
+         "isUnsigned" : false,
+         "lowLimit" : 10,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 999
+      },
+		"PA66_转矩前馈增益" : {
+         "hex" : false,
+         "index" : 66,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 100
+      },
+		"PA67_重力轴补偿偏置" : {
+         "hex" : false,
+         "index" : 67,
+         "isUnsigned" : true,
+         "lowLimit" : -100,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 100
+      },
+		"PA68_PDFF前馈因子" : {
+         "hex" : false,
+         "index" : 68,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 100
+      },
+		"PA69*_外接制动电阻阻值" : {
+         "hex" : false,
+         "index" : 69,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 750
+      },
+		"PA70*_外接制动电阻功率" : {
+         "hex" : false,
+         "index" : 70,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "W",
+         "upLimit" : 10000
+      },
+		"PA71_正向摩擦补偿前馈增益" : {
+         "hex" : false,
+         "index" : 71,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1%",
+         "upLimit" : 300
+      },
+		"PA72_电流环PD限幅调整系数" : {
+         "hex" : false,
+         "index" : 72,
+         "isUnsigned" : false,
+         "lowLimit" : 20,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 100
+      },
+		"PA73_扰动转矩补偿增益" : {
+         "hex" : false,
+         "index" : 73,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 200
+      },
+		"PA74_内部转矩激励信号幅值" : {
+         "hex" : false,
+         "index" : 74,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1%",
+         "upLimit" : 3000
+      },
+		"PA75*_电流环计算次数" : {
+         "hex" : false,
+         "index" : 75,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 5
+      },
+		"PA76_485响应帧延时时间" : {
+         "hex" : false,
+         "index" : 76,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 1000
+      },
+		"PA77*_电流环PWM更新速率" : {
+         "hex" : false,
+         "index" : 77,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 2
+      },
+		"PA78*_电机每旋转圈输出脉冲数" : {
+         "hex" : false,
+         "index" : 78,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X4脉冲",
+         "upLimit" : 32767
+      },
+		"PA79*_系统反馈脉冲输出逻辑取反" : {
+         "hex" : false,
+         "index" : 79,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 1
+      },
+		"PA80_绝对值编码器复位设置" : {
+         "hex" : false,
+         "index" : 80,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA81*_电机每旋转圈的指令脉冲数" : {
+         "hex" : false,
+         "index" : 81,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 32000
+      },
+		"PA82*_485/232通信地址设定" : {
+         "hex" : false,
+         "index" : 82,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 255
+      },
+		"PA83*_485/232通信速率设定" : {
+         "hex" : false,
+         "index" : 83,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 6
+      },
+		"PA84*_电机每旋转圈的指令脉冲数" : {
+         "hex" : false,
+         "index" : 84,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X10000",
+         "upLimit" : 10000
+      },
+		"PA85_振动电流检出百分比" : {
+         "hex" : false,
+         "index" : 85,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 500
+      },
+		"PA86_零速检出值" : {
+         "hex" : false,
+         "index" : 86,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 500
+      },
+		"PA87_485通信校验方式选择" : {
+         "hex" : false,
+         "index" : 87,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 6
+      },
+		"PA88_负向摩擦补偿前馈增益" : {
+         "hex" : false,
+         "index" : 88,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1%",
+         "upLimit" : 300
+      },
+		"PA89_摩擦补偿滤波时间常数" : {
+         "hex" : false,
+         "index" : 89,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 100
+      },
+		"PA90*_Z脉冲处对应的UVW编码" : {
+         "hex" : false,
+         "index" : 90,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 6
+      },
+		"PA91*_增量式编码器UVW方向" : {
+         "hex" : false,
+         "index" : 91,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 1
+      },
+		"PA92_保留" : {
+         "hex" : false,
+         "index" : 92,
+         "isUnsigned" : true,
+         "lowLimit" : -32767,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 32767
+      },
+		"PA93_系统反馈Z脉冲极性设置" : {
+         "hex" : false,
+         "index" : 93,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 1
+      },
+		"PA94_系统反馈Z脉冲完度设置" : {
+         "hex" : false,
+         "index" : 94,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"PA95_内部激励信号类型" : {
+         "hex" : false,
+         "index" : 95,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 4
+      },
+		"PA96_绝对值编码器多圈位数" : {
+         "hex" : false,
+         "index" : 96,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 32
+      },
+		"PA97_报警屏蔽2设置位" : {
+         "hex" : false,
+         "index" : 97,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"PA98_回零到位范围" : {
+         "hex" : false,
+         "index" : 98,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 30
+      },
+		"PA99_绝对值编码器最大设置圈数" : {
+         "hex" : false,
+         "index" : 99,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 32000
+      },
+		"FN0_数字输入DI1功能" : {
+         "hex" : false,
+         "index" : 100,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN1_数字输入DI2功能" : {
+         "hex" : false,
+         "index" : 101,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN2_数字输入DI3功能" : {
+         "hex" : false,
+         "index" : 102,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN3_数字输入DI4功能" : {
+         "hex" : false,
+         "index" : 103,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN4_数字输入DI5功能" : {
+         "hex" : false,
+         "index" : 104,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN5_数字输入DI6功能" : {
+         "hex" : false,
+         "index" : 105,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN6_数字输入DI7功能" : {
+         "hex" : false,
+         "index" : 106,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN7_数字输入DI8功能" : {
+         "hex" : false,
+         "index" : 107,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN8_保留1" : {
+         "hex" : false,
+         "index" : 108,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN9_保留2" : {
+         "hex" : false,
+         "index" : 109,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 31
+      },
+		"FN10_数字输出DO1功能" : {
+         "hex" : false,
+         "index" : 110,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"FN11_数字输出DO2功能" : {
+         "hex" : false,
+         "index" : 111,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"FN12_数字输出DO3功能" : {
+         "hex" : false,
+         "index" : 112,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"FN13_数字输出DO4功能" : {
+         "hex" : false,
+         "index" : 113,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"FN14_数字输出DO5功能" : {
+         "hex" : false,
+         "index" : 114,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"FN15_数字输出DO6功能" : {
+         "hex" : false,
+         "index" : 115,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"FN16_数字输出DO7功能" : {
+         "hex" : false,
+         "index" : 116,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"FN17_STP通信周期参数" : {
+         "hex" : false,
+         "index" : 117,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"FN18_保留3" : {
+         "hex" : false,
+         "index" : 118,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 100
+      },
+		"FN19_保留4" : {
+         "hex" : false,
+         "index" : 119,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 15
+      },
+		"FN20_位置指令修正系数" : {
+         "hex" : false,
+         "index" : 120,
+         "isUnsigned" : false,
+         "lowLimit" : 10,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1",
+         "upLimit" : 99
+      },
+		"FN21*_485通信协议选择" : {
+         "hex" : false,
+         "index" : 121,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 4
+      },
+		"FN22*_电机相关参数设置" : {
+         "hex" : false,
+         "index" : 122,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"FN23_辅助控制策略设置" : {
+         "hex" : false,
+         "index" : 123,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "十进制",
+         "upLimit" : 31
+      },
+		"FN24_保留5" : {
+         "hex" : false,
+         "index" : 124,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 1
+      },
+		"FN25_保留6" : {
+         "hex" : false,
+         "index" : 125,
+         "isUnsigned" : true,
+         "lowLimit" : -30000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 30000
+      },
+		"FN26_保留7" : {
+         "hex" : false,
+         "index" : 126,
+         "isUnsigned" : true,
+         "lowLimit" : -30000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 30000
+      },
+		"FN27_保留8" : {
+         "hex" : false,
+         "index" : 127,
+         "isUnsigned" : true,
+         "lowLimit" : -30000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 30000
+      },
+		"FN28_保留9" : {
+         "hex" : false,
+         "index" : 128,
+         "isUnsigned" : true,
+         "lowLimit" : -30000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 30000
+      },
+		"FN29_原点回归模式" : {
+         "hex" : false,
+         "index" : 129,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 10
+      },
+		"FN30_原点回归第一速度" : {
+         "hex" : false,
+         "index" : 130,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 3000
+      },
+		"FN31_原点回归第二速度" : {
+         "hex" : false,
+         "index" : 131,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 3000
+      },
+		"FN32_原点回归加减速时间常数" : {
+         "hex" : false,
+         "index" : 132,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 30000
+      },
+		"FN33_原点回归触发方式" : {
+         "hex" : false,
+         "index" : 133,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 3
+      },
+		"FN34_U相电流偏置补偿量" : {
+         "hex" : false,
+         "index" : 134,
+         "isUnsigned" : true,
+         "lowLimit" : -5000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 5000
+      },
+		"FN35_V相电流偏置补偿量" : {
+         "hex" : false,
+         "index" : 135,
+         "isUnsigned" : true,
+         "lowLimit" : -5000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 5000
+      },
+		"FN36_VF模式运行频率" : {
+         "hex" : false,
+         "index" : 136,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "Hz",
+         "upLimit" : 1000
+      },
+		"FN37_VF模式运行幅值" : {
+         "hex" : false,
+         "index" : 137,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 150
+      },
+		"FN38_保留10" : {
+         "hex" : false,
+         "index" : 138,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 5000
+      },
+		"FN39_保留11" : {
+         "hex" : false,
+         "index" : 139,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 5000
+      },
+		"FN40_电流环带宽设置" : {
+         "hex" : false,
+         "index" : 140,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "Hz",
+         "upLimit" : 8000
+      },
+		"FN41_保留12" : {
+         "hex" : false,
+         "index" : 141,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1",
+         "upLimit" : 5000
+      },
+		"FN42_陷波滤波器2中心频率" : {
+         "hex" : false,
+         "index" : 142,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "Hz",
+         "upLimit" : 1200
+      },
+		"FN43_陷波滤波器2宽度" : {
+         "hex" : false,
+         "index" : 143,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 20
+      },
+		"FN44_陷波滤波器2深度" : {
+         "hex" : false,
+         "index" : 144,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 100
+      },
+		"FN45_陷波滤波器中心频率" : {
+         "hex" : false,
+         "index" : 145,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "Hz",
+         "upLimit" : 1000
+      },
+		"FN46_陷波滤波器宽度" : {
+         "hex" : false,
+         "index" : 146,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 20
+      },
+		"FN47_陷波滤波器深度" : {
+         "hex" : false,
+         "index" : 147,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 100
+      },
+		"FN48_保留13" : {
+         "hex" : false,
+         "index" : 148,
+         "isUnsigned" : true,
+         "lowLimit" : -30000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 30000
+      },
+		"FN49_保留" : {
+         "hex" : false,
+         "index" : 149,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 8
+      },
+		"FN50_模拟量AI1滤波时间常数" : {
+         "hex" : false,
+         "index" : 150,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1ms",
+         "upLimit" : 6000
+      },
+		"FN51_模拟量AI1零漂" : {
+         "hex" : false,
+         "index" : 151,
+         "isUnsigned" : true,
+         "lowLimit" : -500,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "mV",
+         "upLimit" : 500
+      },
+		"FN52_模拟量AI1偏置" : {
+         "hex" : false,
+         "index" : 152,
+         "isUnsigned" : true,
+         "lowLimit" : -5000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "mV",
+         "upLimit" : 5000
+      },
+		"FN53_模拟量AI1死区" : {
+         "hex" : false,
+         "index" : 153,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "mV",
+         "upLimit" : 1000
+      },
+		"FN54_模拟量10V对应速度值" : {
+         "hex" : false,
+         "index" : 154,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 6000
+      },
+		"FN55_模拟量AI2滤波时间常数" : {
+         "hex" : false,
+         "index" : 155,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1rpm",
+         "upLimit" : 6000
+      },
+		"FN56_模拟量AI2零漂" : {
+         "hex" : false,
+         "index" : 156,
+         "isUnsigned" : true,
+         "lowLimit" : -500,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "mV",
+         "upLimit" : 500
+      },
+		"FN57_模拟量AI2偏置" : {
+         "hex" : false,
+         "index" : 157,
+         "isUnsigned" : true,
+         "lowLimit" : -5000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "mV",
+         "upLimit" : 5000
+      },
+		"FN58_模拟量AI2死区" : {
+         "hex" : false,
+         "index" : 158,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "mV",
+         "upLimit" : 1000
+      },
+		"FN59_模拟量10V对应转矩值" : {
+         "hex" : false,
+         "index" : 159,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1%",
+         "upLimit" : 7999
+      },
+		"FN60_第2位置环增益" : {
+         "hex" : false,
+         "index" : 160,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 1000
+      },
+		"FN61_第2速度环比例增益" : {
+         "hex" : false,
+         "index" : 161,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 3000
+      },
+		"FN62_第2速度环积分时间常数" : {
+         "hex" : false,
+         "index" : 162,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 100000
+      },
+		"FN63_速度调节器拐点速度1" : {
+         "hex" : false,
+         "index" : 163,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 6000
+      },
+		"FN64_速度调节器拐点速度2" : {
+         "hex" : false,
+         "index" : 164,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 6000
+      },
+		"FN65_内部速度指令4" : {
+         "hex" : false,
+         "index" : 165,
+         "isUnsigned" : true,
+         "lowLimit" : -9000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 9000
+      },
+		"FN66_离线惯量辨识最大速度" : {
+         "hex" : false,
+         "index" : 166,
+         "isUnsigned" : false,
+         "lowLimit" : 100,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 3000
+      },
+		"FN67_离线惯量辨识加减速时间" : {
+         "hex" : false,
+         "index" : 167,
+         "isUnsigned" : false,
+         "lowLimit" : 20,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 1000
+      },
+		"FN68_离线惯量辨识等待时间" : {
+         "hex" : false,
+         "index" : 168,
+         "isUnsigned" : false,
+         "lowLimit" : 50,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 10000
+      },
+		"FN69_惯量辨识模式选择" : {
+         "hex" : false,
+         "index" : 169,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 3
+      },
+		"FN70_内部位置模式目标位置" : {
+         "hex" : false,
+         "index" : 170,
+         "isUnsigned" : true,
+         "lowLimit" : -1000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1圈",
+         "upLimit" : 1000
+      },
+		"FN71_内部位置模式最大速度未改" : {
+         "hex" : false,
+         "index" : 171,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 6000
+      },
+		"FN72_内部位置模式加减速时间常数" : {
+         "hex" : false,
+         "index" : 172,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 3000
+      },
+		"FN73_内部位置模式等待时间" : {
+         "hex" : false,
+         "index" : 173,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "ms",
+         "upLimit" : 10000
+      },
+		"FN74_保留14" : {
+         "hex" : false,
+         "index" : 174,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1",
+         "upLimit" : 20
+      },
+		"FN75_零位锁定电流设置" : {
+         "hex" : false,
+         "index" : 175,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "%",
+         "upLimit" : 200
+      },
+		"FN76_速度补偿策略选择" : {
+         "hex" : false,
+         "index" : 176,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 0
+      },
+		"DJ0_电机厂家" : {
+         "hex" : false,
+         "index" : 300,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 8
+      },
+		"DJ1_保留" : {
+         "hex" : false,
+         "index" : 301,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 5
+      },
+		"DJ2_编码器线数低4位" : {
+         "hex" : false,
+         "index" : 302,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 10000
+      },
+		"DJ3_编码器线数高4位" : {
+         "hex" : false,
+         "index" : 303,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X10000",
+         "upLimit" : 10000
+      },
+		"DJ4_编码器Z脉冲偏移" : {
+         "hex" : false,
+         "index" : 304,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 20000
+      },
+		"DJ5_电机极对数" : {
+         "hex" : false,
+         "index" : 305,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 60
+      },
+		"DJ6_电机额定电流" : {
+         "hex" : false,
+         "index" : 306,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1A",
+         "upLimit" : 1000
+      },
+		"DJ7_电机额定转矩" : {
+         "hex" : false,
+         "index" : 307,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1Nm",
+         "upLimit" : 1000
+      },
+		"DJ8_电机额定转速" : {
+         "hex" : false,
+         "index" : 308,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 9000
+      },
+		"DJ9_电机最大转速" : {
+         "hex" : false,
+         "index" : 309,
+         "isUnsigned" : false,
+         "lowLimit" : 1,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "rpm",
+         "upLimit" : 9000
+      },
+		"DJ10_电机转动惯量" : {
+         "hex" : false,
+         "index" : 310,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.01X10^-4Kgm^2",
+         "upLimit" : 20000
+      },
+		"DJ11_电机相反电动势常数" : {
+         "hex" : false,
+         "index" : 311,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.1V/Krpm",
+         "upLimit" : 20000
+      },
+		"DJ12_绝对式编码器偏移低4位" : {
+         "hex" : false,
+         "index" : 312,
+         "isUnsigned" : true,
+         "lowLimit" : -10000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 10000
+      },
+		"DJ13_绝对式编码器偏移高4位" : {
+         "hex" : false,
+         "index" : 313,
+         "isUnsigned" : true,
+         "lowLimit" : -10000,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "",
+         "upLimit" : 10000
+      },
+		"DJ14_电机相电阻" : {
+         "hex" : false,
+         "index" : 314,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.01Ω",
+         "upLimit" : 5000
+      },
+		"DJ15_电机相电感" : {
+         "hex" : false,
+         "index" : 315,
+         "isUnsigned" : false,
+         "lowLimit" : 0,
+         "subIndex" : 0,
+         "syntax" : 16,
+         "unit" : "X0.01mH",
+         "upLimit" : 5000
+      }
+   },
+   "version" : "1.0.2"
+}

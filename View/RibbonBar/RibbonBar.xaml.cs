@@ -77,5 +77,10 @@ namespace IPD.View.RibbonBar
             OpcUaWindow opcUaWindow = new OpcUaWindow();
             opcUaWindow.Show();
         }
+
+        private void ServoParameter_Click(object sender, RoutedEventArgs e)
+        {
+            ChangeContentEvent.Invoke(new Pages.OtherParameter.ServoParameter.Index());
+        }
     }
 }

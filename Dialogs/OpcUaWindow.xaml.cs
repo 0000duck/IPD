@@ -137,7 +137,7 @@ namespace IPD.Dialogs
 
         private async void nodeTree_Initialized(object sender, EventArgs e)
         {
-            bool connection = await OpcUa.ConnectAsync();
+            bool connection = await OpcUa.ConnectAsync(host.Text, port.Text);
             if (connection)
             {
                 getNodeTree();
@@ -172,6 +172,15 @@ namespace IPD.Dialogs
             catch
             {
                 return;
+            }
+        }
+
+        private async void connect_Click(object sender, RoutedEventArgs e)
+        {
+            bool connection = await OpcUa.ConnectAsync(host.Text, port.Text);
+            if (connection)
+            {
+                getNodeTree();
             }
         }
     }

@@ -4,7 +4,7 @@
 
 Inexbot PC Debugger 纳博特 pc 版调试软件。
 
-.NET 5 / C# / WPF / Ribbon
+.NET 6 / C# / WPF / Ribbon
 
 项目介绍:[Blaze-PC调试软件(示例)](https://blaze.inexbot.com/docs/dotnet/ipd)
 
@@ -19,7 +19,7 @@ Inexbot PC Debugger 纳博特 pc 版调试软件。
 ### 代码使用
 
 1. clone 或下载项目；
-2. 使用 Visual Studio 2017/2019 或更新的版本打开项目 IPD.csproj
+2. 使用 Visual Studio 2022 或更新的版本打开项目 IPD.csproj
 3. 生成并运行程序。
 
 ### 目录结构

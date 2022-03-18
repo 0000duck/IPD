@@ -43,12 +43,12 @@
                 <Fluent:Button Header="关于" x:Name="AboutButton" Click="AboutButton_Click" />
             </Fluent:RibbonGroupBox>
         </Fluent:RibbonTabItem>
-        <Fluent:RibbonTabItem Header="调试"  IsEnabled="{Binding ConnectState}">
-            <Fluent:RibbonGroupBox Header="点动">
+        <Fluent:RibbonTabItem Header="调试">
+            <Fluent:RibbonGroupBox Header="点动"  IsEnabled="{Binding ConnectState}">
                 <Fluent:Button x:Name="jog" Header="点动" IsEnabled="False" />
             </Fluent:RibbonGroupBox>
             <Fluent:RibbonGroupBox Header="其它">
-                <Fluent:Button x:Name="oscilloscope" Header="示波器" Click="oscilloscope_Click" />
+                <Fluent:Button x:Name="oscilloscope" Header="示波器" Click="oscilloscope_Click"  IsEnabled="{Binding ConnectState}" />
                 <Fluent:Button x:Name="codeEditor" Header="代码编辑" IsEnabled="False" />
                 <Fluent:Button x:Name="opcua" Header="OPC-UA" Click="opcua_Click" />
             </Fluent:RibbonGroupBox>
@@ -71,6 +71,12 @@
         <Fluent:RibbonTabItem Header="参数"  IsEnabled="{Binding ConnectState}">
             <Fluent:RibbonGroupBox Header="机器人参数">
                 <Fluent:Button x:Name="configurationParameter" Header="机构参数" Click="configurationParameter_Click" />
+                <Fluent:Button Header="区域参数" IsEnabled="False" />
+                <Fluent:Button Header="动力学" IsEnabled="False" />
+                <Fluent:Button Header="远程与自启动" IsEnabled="False" />
+            </Fluent:RibbonGroupBox>
+            <Fluent:RibbonGroupBox Header="其它参数">
+                <Fluent:Button x:Name="ServoParameter" Header="伺服参数" Click="ServoParameter_Click" />
                 <Fluent:Button Header="区域参数" IsEnabled="False" />
                 <Fluent:Button Header="动力学" IsEnabled="False" />
                 <Fluent:Button Header="远程与自启动" IsEnabled="False" />

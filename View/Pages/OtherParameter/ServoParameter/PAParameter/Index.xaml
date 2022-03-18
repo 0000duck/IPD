@@ -1,0 +1,500 @@
+﻿<UserControl x:Class="IPD.View.Pages.OtherParameter.ServoParameter.PAParameter.Index"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:component="clr-namespace:IPD.Component"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+    <Grid>
+        <ScrollViewer x:Name="scroll" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="parameterList">
+                <component:ParameterListItem ParameterName="参数" ParameterComment="注释">
+                    <component:ParameterListItem.ValueContent>
+                        <Label Content="数值" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA0_参数密码" ParameterComment="0-9999,default:315" x:Name="PA0Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA0Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA1_电机型号" ParameterComment="1-132,default:0" x:Name="PA1Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA1Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA2_驱动器型号" ParameterComment="0-4,default:0" x:Name="PA2Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA2Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA3_初始显示状态" ParameterComment="0-25,default:0" x:Name="PA3Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA3Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA4_控制方式" ParameterComment="0-16,default:0" x:Name="PA4Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA4Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA5_速度比例增益" ParameterComment="2-2000,default:150*" x:Name="PA5Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA5Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA6_速度积分时间常数" ParameterComment="1.0-1000.0,default:50.0*" x:Name="PA6Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA6Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA7_转矩滤波器时间常数" ParameterComment="0-20.0,default:0.2" x:Name="PA7Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA7Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA8_速度反馈滤波时间常数" ParameterComment="0-10.00,default:0.5" x:Name="PA8Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA8Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA9_位置比例增益" ParameterComment="1-1000,default:50*" x:Name="PA9Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA9Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA10_速度前馈增益" ParameterComment="0-200,default:0" x:Name="PA10Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA10Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA11_速度前馈滤波时间常数" ParameterComment="0-10.0,default:0.5" x:Name="PA11Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA11Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA12_位置指令脉冲分频分子" ParameterComment="1-32767,default:1" x:Name="PA12Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA12Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA13_位置指令脉冲分频分母" ParameterComment="1-32767,default:1" x:Name="PA13Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA13Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA14_位置指令脉冲输入方式" ParameterComment="0-4,default:0" x:Name="PA14Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA14Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA15_指令方向取反设置" ParameterComment="00000b-11111b,default:00000b" x:Name="PA15Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA15Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA16_定位完成范围" ParameterComment="0-30000,default:100" x:Name="PA16Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA16Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA17_位置超差检测范围" ParameterComment="0-3000,default:30" x:Name="PA17Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA17Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA18_绝对式编码器使用方式" ParameterComment="00000b-11111b,default:00101b" x:Name="PA18Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA18Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA19_位置指令脉冲信号滤波时间常数" ParameterComment="0.0-20.0,default:0.0" x:Name="PA19Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA19Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA20_伺服控制辅助位开关" ParameterComment="00000b-11111b,default:00000b" x:Name="PA20Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA20Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA21_JOG运行速度转/矩模式最高速度" ParameterComment="0-3000,default:300" x:Name="PA21Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA21Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA22_速度指令来源选择" ParameterComment="0-2,default:0" x:Name="PA22Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA22Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA23_用户设定最高速度限制百分比" ParameterComment="1-200,default:100" x:Name="PA23Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA23Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA24_位置指令方向信号滤波时间常数" ParameterComment="0.0-20.0,default:0.0" x:Name="PA24Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA24Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA25_转矩指令来源选择" ParameterComment="0-8,default:0" x:Name="PA25Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA25Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA26_速度指令设置频率" ParameterComment="0-3000,default:0" x:Name="PA26Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA26Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA27_内部速度指令1" ParameterComment="-9000-9000,default:0" x:Name="PA27Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA27Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA28_到达速度" ParameterComment="0-3000,default:500" x:Name="PA28Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA28Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA29_负载转动惯量比" ParameterComment="0-8000,default:200" x:Name="PA29Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA29Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA30_电机转矩过载报警值" ParameterComment="10-300,default:160" x:Name="PA30Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA30Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA31_电机转矩过载报警检测时间" ParameterComment="0-12000,default:3000" x:Name="PA31Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA31Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA32_控制方式切换允许" ParameterComment="0-1,default:0" x:Name="PA32Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA32Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA33_刚性等级" ParameterComment="0-31,default:0" x:Name="PA33Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA33Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA34_内部CCW转矩限制" ParameterComment="0-300,default:300*" x:Name="PA34Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA34Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA35_内部CW转矩限制" ParameterComment="-300-0,default:-300*" x:Name="PA35Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA35Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA36_速度指令滤波时间常数" ParameterComment="0-10.0,default:0.2" x:Name="PA36Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA36Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA37_转矩前馈滤波时间常数" ParameterComment="0-10.0,default:0.5" x:Name="PA37Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA37Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA38_DP菜单动态显示项" ParameterComment="0-300,default:null" x:Name="PA38Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA38Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA39_STP串口通信速率" ParameterComment="0-15,default:0" x:Name="PA39Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA39Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA40_加速时间常数" ParameterComment="0-10000,default:20" x:Name="PA40Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA40Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA41_减速时间常数" ParameterComment="0-10000,default:20" x:Name="PA41Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA41Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA42_增量式编码器AB信号滤波时间" ParameterComment="0-1000,default:1" x:Name="PA42Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA42Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA43_制动电阻最大允许冲击时间" ParameterComment="10-5000,default:1700" x:Name="PA43Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA43Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA44_脉冲指令功能选择" ParameterComment="00000b-11111b,default:00000b" x:Name="PA44Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA44Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA45_绝对式编码器单圈位数" ParameterComment="0-30,default:0" x:Name="PA45Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA45Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA46_速度积分滤波器时间常数" ParameterComment="0-500,default:1.0" x:Name="PA46Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA46Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA47_电机静止时使能断开等待时间" ParameterComment="0-5000,default:0" x:Name="PA47Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA47Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA48_电机运转时电磁制动器制动等待时间" ParameterComment="0-5000,default:50" x:Name="PA48Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA48Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA49_电机运转时制动器动作速度" ParameterComment="0-3000,default:100" x:Name="PA49Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA49Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA50_电机使能时制动器打开延时" ParameterComment="0-3000,default:20" x:Name="PA50Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA50Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA51_制动电阻选择开关" ParameterComment="0-1,default:0" x:Name="PA51Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA51Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA52_位置指令平滑时间常数" ParameterComment="0.0-100.0,default:0.0" x:Name="PA52Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA52Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA53_低5位输入端子强制ON" ParameterComment="00000b-11111b,default:00000b" x:Name="PA53Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA53Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA54_高5位输入端子强制ON" ParameterComment="00000b-11111b,default:00000b" x:Name="PA54Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA54Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA55_低5位输入端子逻辑取反" ParameterComment="00000b-11111b,default:00000b" x:Name="PA55Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA55Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA56_高5位输入端子逻辑取反" ParameterComment="00000b-11111b,default:00000b" x:Name="PA56Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA56Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA57_输出端子逻辑取反" ParameterComment="00000b-11111b,default:00000b" x:Name="PA57Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA57Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA58_输入端子去抖时间常数" ParameterComment="0.1-800,default:1.0" x:Name="PA58Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA58Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA60_转矩指令滤波时间常数" ParameterComment="0-50.00,default:0.2" x:Name="PA60Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA60Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA61_电机编码器类型设置" ParameterComment="-1-7,default:-1" x:Name="PA61Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA61Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA62_报警屏蔽设置位" ParameterComment="00000b-11111b,default:00000b" x:Name="PA62Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA62Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA63_扰动转矩补偿增益滤波器截止频率" ParameterComment="0-2000,default:50" x:Name="PA63Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA63Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA64_电流比例增益" ParameterComment="1-500,default:150*" x:Name="PA64Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA64Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA65_电流积分时间常数" ParameterComment="1-100.0,default:20.0*" x:Name="PA65Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA65Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA66_转矩前馈增益" ParameterComment="0-100,default:0" x:Name="PA66Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA66Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA67_重力轴补偿偏置" ParameterComment="-100-100,default:0" x:Name="PA67Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA67Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA68_PDFF前馈因子" ParameterComment="0-100,default:100" x:Name="PA68Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA68Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA69_外接制动电阻阻值" ParameterComment="0-750,default:50" x:Name="PA69Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA69Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA70_外接制动电阻功率" ParameterComment="0-10000,default:50" x:Name="PA70Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA70Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA71_正向摩擦补偿前馈增益" ParameterComment="0-300,default:0" x:Name="PA71Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA71Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA72_电流环PID限幅调整系数" ParameterComment="20-100,default:100" x:Name="PA72Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA72Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA73_扰动转矩补偿增益" ParameterComment="0-200,default:0" x:Name="PA73Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA73Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA74_内部电流指令" ParameterComment="-300-300,default:0" x:Name="PA74Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA74Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA75_电流环保留参数1" ParameterComment="0-5,default:0" x:Name="PA75Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA75Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA76_485响应帧延时时间" ParameterComment="0-1000,default:3" x:Name="PA76Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA76Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA77_电流环保留参数2" ParameterComment="0-2,default:0" x:Name="PA77Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA77Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA78_电机每旋转一圈输出脉冲数" ParameterComment="1-32767,default:2500" x:Name="PA78Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA78Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA79_系统反馈脉冲输出逻辑取反" ParameterComment="0-1,default:0" x:Name="PA79Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA79Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA80_绝对式编码器复位设置" ParameterComment="00000b-11111b,default:00000b" x:Name="PA80Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA80Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA81_电机每旋转一圈的指令脉冲数低位" ParameterComment="0-32000,default:0" x:Name="PA81Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA81Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA82_485/232通信地址设定" ParameterComment="0-255,default:1" x:Name="PA82Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA82Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA83_485/232通信速率设定" ParameterComment="0-6,default:2" x:Name="PA83Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA83Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA84_电机每旋转一圈的指令脉冲数高位" ParameterComment="0-10000,default:0" x:Name="PA84Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA84Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA85_振动检出电流百分比" ParameterComment="0-500,default:100" x:Name="PA85Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA85Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA86_零速检出值" ParameterComment="0-100,default:10" x:Name="PA86Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA86Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA87_485通信校验方式选择" ParameterComment="0-6,default:0" x:Name="PA87Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA87Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA88_负向摩擦补偿前馈增益" ParameterComment="0-300,default:0" x:Name="PA88Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA88Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA89_摩擦补偿滤波时间常数" ParameterComment="0-10.0,default:1.0" x:Name="PA89Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA89Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA90_Z脉冲处对应的UVW编码" ParameterComment="0-6,default:0" x:Name="PA90Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA90Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA91_增量式编码器UVW方向" ParameterComment="0-1,default:0" x:Name="PA91Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA91Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA93_系统反馈Z脉冲极性设置" ParameterComment="0-1,default:0" x:Name="PA93Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA93Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA94_系统反馈Z脉冲宽度设置" ParameterComment="0-15,default:4" x:Name="PA94Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA94Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA97_报警屏蔽设置位" ParameterComment="00000b-11111b,default:00000b" x:Name="PA97Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA97Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA98_原点位置确认范围" ParameterComment="0-30,default:0" x:Name="PA98Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA98Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+                <component:ParameterListItem ParameterName="PA99_绝对式多圈数据上限值" ParameterComment="0-32000,default:0" x:Name="PA99Item">
+                    <component:ParameterListItem.ValueContent>
+                        <TextBox x:Name="PA99Value" />
+                    </component:ParameterListItem.ValueContent>
+                </component:ParameterListItem>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

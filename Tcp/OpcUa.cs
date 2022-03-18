@@ -11,7 +11,7 @@ namespace IPD.Tcp
 {
     internal class OpcUa
     {
-        private readonly static object lockObj = new object();
+        private static readonly object lockObj = new object();
         private static OpcUa instance = null;
 
         public static OpcUa Instance
@@ -112,10 +112,11 @@ namespace IPD.Tcp
             m_configuration.Validate(ApplicationType.Client);
         }
 
-        public async Task<bool> ConnectAsync()
+        public async Task<bool> ConnectAsync(string host, string port)
         {
             Model.ConnectParameter ConnectParameter = Model.ConnectParameter.GetInstance;
-            ServerUrl = "opc.tcp://" + ConnectParameter.IP + ":4840";
+            //ServerUrl = "opc.tcp://" + ConnectParameter.IP + ":4840";
+            ServerUrl = host + ":" + port;
             try
             {
                 if (Session != null && Session.Connected == true)
